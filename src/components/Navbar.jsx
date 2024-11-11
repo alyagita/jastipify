@@ -1,4 +1,9 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+import search from "../assets/search.png";
+import trolly from "../assets/trolly.png";
+import profile from "../assets/profile.png";
 
 const Navbar = () => {
   return (
@@ -6,39 +11,55 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center space-x-2">
         {/* Logo */}
-        <img src="/assets/logo.png" className="w-24 h-auto" />
+        <img src={logo} className="w-20 h-auto" />
       </div>
 
       {/* Navigation Links */}
-      <ul className="hidden md:flex space-x-8">
-        <li><a href="/" className="text-gray-700 hover:text-orange-500">Home</a></li>
-        <li><a href="/about" className="text-gray-700 hover:text-orange-500">About Us</a></li>
-        <li><a href="/on-sale" className="text-gray-700 hover:text-orange-500">On Sale</a></li>
-        <li><a href="/contact" className="text-gray-700 hover:text-orange-500">Contact Us</a></li>
+      <ul className="hidden md:flex space-x-12">
+        <li>
+          <Link to="/" className="text-gray-700 hover:text-[#FA8B02]">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="text-gray-700 hover:text-[#FA8B02]">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/on-sale" className="text-gray-700 hover:text-[#FA8B02]">
+            On Sale
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="text-gray-700 hover:text-[#FA8B02]">
+            Contact Us
+          </Link>
+        </li>
       </ul>
 
       {/* Search Bar */}
-      <div className="flex items-center border border-orange-500 rounded-md overflow-hidden">
+      <div className="flex items-center border border-[#FA8B02] rounded-md overflow-hidden">
         <input
           type="text"
           placeholder="Search for products..."
-          className="px-4 py-1 text-orange-500 placeholder-orange-500 focus:outline-none"
+          className="pl-2 w-[30rem] py-1 text-xs text-[#FA8B02] placeholder-[#FA8B02] focus:outline-none"
         />
-        <button className="px-4 bg-orange-500 text-white">
+        <button className="px-4 bg-[#FA8B02] text-white">
           {/* Search Icon */}
-          <img src="/assets/search.png" alt="Search" className="w-4 h-4" />
+          <img src={search} alt="Search" className="w-6 h-6" />
         </button>
       </div>
 
       {/* Icons */}
-      <div className="flex items-center space-x-4 text-orange-500">
+      <div className="flex items-center space-x-8 text-[#FA8B02]">
         <a href="/cart">
-          {/* Trolley Icon */}
-          <img src="/assets/trolly.png" alt="Cart" className="w-6 h-6" />
+          {/* Trolly Icon */}
+          <img src={trolly} alt="Cart" className="w-6 h-6" />
         </a>
         <a href="/profile">
           {/* Profile Icon */}
-          <img src="/assets/profile.png" alt="Profile" className="w-6 h-6" />
+          <img src={profile} alt="Profile" className="w-6 h-6" />
         </a>
       </div>
     </nav>
