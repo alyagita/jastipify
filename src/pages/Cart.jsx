@@ -187,7 +187,7 @@ const Cart = () => {
         <div className="mr-20">
           <h2 className="text-lg font-semibold text-gray-700">Total Price</h2>
           <p className="text-[#FA8B02] font-bold text-2xl">
-            Rp{totalPrice.toLocaleString()}
+            Rp{totalPrice.toLocaleString()},00
           </p>
         </div>
         <button className="bg-[#FA8B02] text-white py-2 px-8 rounded-full hover:bg-[#FA8B02] font-semibold text-lg">
