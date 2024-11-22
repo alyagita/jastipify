@@ -1,4 +1,9 @@
 import React from 'react'
+import visa from "../assets/visa.png"
+import mastercard from "../assets/mastercard.png"
+import paypal from "../assets/paypal.png"
+import applepay from "../assets/applepay.png"
+import googlepay from "../assets/googlepay.png"
 
 const Footer = () => {
   return (
@@ -68,7 +73,14 @@ const Footer = () => {
       {/* Copyright and Payment Methods */}
       <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-300">
         <p className="text-gray-600">Jastipify © 2024, All Rights Reserved</p>
-        <img src="/payments.png" alt="Payment Methods" className="h-8" />
+        {/* Payment Logos */}
+        <div className="flex">
+          <img src={visa} className="h-9" />
+          <img src={mastercard} className="h-9" />
+          <img src={paypal} className="h-9" />
+          <img src={applepay} className="h-9" />
+          <img src={googlepay} className="h-9" />
+          </div>
       </div>
     </div>
   </footer>
