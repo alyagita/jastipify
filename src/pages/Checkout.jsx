@@ -25,7 +25,9 @@ const Checkout = () => {
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', fontFamily: 'Poppins, sans-serif' }}>
         {/* Checkout Form */}
         <div style={{ width: '60%', padding: '20px' }}>
-          <h3>Checkout</h3>
+        <div style={{ fontWeight: 'bold', fontSize: '20px'}}>
+        <p>Checkout</p>
+        </div>
           <form>
             {/* Name and Phone row */}
             <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
@@ -110,8 +112,10 @@ const Checkout = () => {
         </div>
 
         {/* Summary Section */}
-        <div style={{ width: '35%', padding: '20px', border: '1px solid #ddd' }}>
-          <h3>Your Summary</h3>
+        <div style={{ width: '37%', padding: '20px', border: '5px solid #ddd', boxSizing: 'border-box', height: '530px'}}>
+        <div style={{ fontWeight: 'bold', fontSize: '20px'}}>
+        <p>Your Summary</p>
+        </div>
           <h4>Items</h4>
           <div style={{ display: 'flex', gap: '100px', alignItems: 'center', marginBottom: '15px' }}>
             <img src="/src/assets/crocs.png" alt="Product" style={{ width: '150px', marginBottom: '10px' }} />

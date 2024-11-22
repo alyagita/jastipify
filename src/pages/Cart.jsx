@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate(); 
   const initialCartItems = [
     {
       id: 1,
@@ -190,7 +192,10 @@ const Cart = () => {
             Rp{totalPrice.toLocaleString()},00
           </p>
         </div>
-        <button className="bg-[#FA8B02] text-white py-2 px-8 rounded-full hover:bg-[#FA8B02] font-semibold text-lg">
+        <button
+          className="bg-[#FA8B02] text-white py-2 px-8 rounded-full hover:bg-[#FA8B02] font-semibold text-lg"
+          onClick={() => navigate('/checkout')}
+        >
           Checkout
         </button>
       </div>
