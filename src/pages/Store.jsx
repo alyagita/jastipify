@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const StoreHeader = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full">
       {/* Store Header */}
@@ -43,7 +46,8 @@ const StoreHeader = () => {
           <button className="bg-[#FB8500] border-none px-9 py-1 text-white rounded font-bold text-sm hover:bg-[#e07300] transition-colors">
             Follow
           </button>
-          <button className="bg-[#FB8500] border-none px-8 py-1 text-white rounded font-bold text-sm hover:bg-[#e07300] transition-colors">
+          <button className="bg-[#FB8500] border-none px-8 py-1 text-white rounded font-bold text-sm hover:bg-[#e07300] transition-colors"
+          onClick={() => navigate('/chat')}>
             Request
           </button>
         </div>

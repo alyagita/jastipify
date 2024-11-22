@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const Chat = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col justify-between h-screen w-full border border-gray-200 bg-white">
       <header className="flex items-center p-3 bg-orange-500 text-white">
@@ -136,7 +139,9 @@ const Chat = () => {
   Crocs Unisex-Adult Baya Clogs
 </p>
       <p className="text-orange-500 font-bold mb-2">Rp700.000,00</p>
-      <button className="bg-orange-500 text-white px-3 py-2 rounded hover:bg-orange-600 transition-colors">
+      <button className="bg-orange-500 text-white px-3 py-2 rounded hover:bg-orange-600 transition-colors"
+      onClick={() => navigate('/cart')}
+      >
         Add to Cart
       </button>
     </div> 
