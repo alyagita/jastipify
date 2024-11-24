@@ -3,7 +3,7 @@ import React from 'react'
 const Search = () => {
   const stores = [
     {
-      image: '/WishList.png',
+      image: '/src/assets/WishList.png',
       title: 'WishList',
       date: '15 Sept - 03 Oct 2024',
       sold: '25',
@@ -11,7 +11,7 @@ const Search = () => {
       rating: '4.9'
     },
     {
-      image: '/BoutiqueID.png',
+      image: '/src/assets/BoutiqueID.png',
       title: 'BoutiqueID',
       date: '1 Oct - 15 Oct 2024',
       sold: '15',
@@ -19,7 +19,7 @@ const Search = () => {
       rating: '4.9'
     },
     {
-      image: '/PickShop.png',
+      image: '/src/assets/PickShop.png',
       title: 'PickShop',
       date: '02 Sept - 30 Sept 2024',
       sold: '115',
@@ -27,7 +27,7 @@ const Search = () => {
       rating: '4.9'
     },
     {
-      image: '/LuxuryList.png',
+      image: '/src/assets/LuxuryList.png',
       title: 'LuxuryList',
       date: '20 Sept - 10 Oct 2024',
       sold: '2985',
@@ -35,7 +35,7 @@ const Search = () => {
       rating: '5.0'
     },
     {
-      image: '/TreasureHunt.png',
+      image: '/src/assets/TreasureHunt.png',
       title: 'TreasureHunt',
       date: '25 Sept - 01 Oct 2024',
       sold: '1467',
@@ -43,7 +43,7 @@ const Search = () => {
       rating: '4.6'
     },
     {
-      image: '/FindsOfficial.png',
+      image: '/src/assets/FindsOfficial.png',
       title: 'FindsOfficial',
       date: '19 Sept - 30 Sept 2024',
       sold: '95',
@@ -109,49 +109,6 @@ const Search = () => {
 
   return (
     <>
-      <header className="mb-8">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
-            <div className="flex items-center">
-              <img src="/logo.png" alt="Company Logo" className="h-12 w-auto" />
-            </div>
-
-            <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-700 hover:text-[#fb8500]">Home</a>
-              <a href="/about" className="text-gray-700 hover:text-[#fb8500]">About Us</a>
-              <a href="/sale" className="text-gray-700 hover:text-[#fb8500]">On Sale</a>
-              <a href="/contact" className="text-gray-700 hover:text-[#fb8500]">Contact Us</a>
-            </nav>
-
-            <div className="flex items-center">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search for products..."
-                  className="w-64 px-4 py-2 border border-[#fb8500] rounded-lg focus:outline-none focus:border-[#fb8500] placeholder-gray-400"
-                />
-                <button className="absolute right-0 top-0 h-full w-12 bg-[#fb8500] text-white rounded-r-lg flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </button>
-              </div>
-
-              <div className="ml-4 text-[#fb8500]">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-
-              <div className="ml-4 text-[#fb8500]">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
 
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-medium mb-8">
@@ -171,36 +128,6 @@ const Search = () => {
         </div>
       </div>
 
-      <footer className="bg-gray-100 mt-16 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">HELP</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Customer Support</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Delivery Details</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Terms & Conditions</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Privacy Policy</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">FAQ</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Account</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Manage Deliveries</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Orders</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#fb8500]">Payments</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-300">
-            <p className="text-gray-600">Jastipify © 2024, All Rights Reserved</p>
-            <img src="/payments.png" alt="Payment Methods" className="h-8" />
-          </div>
-        </div>
-      </footer>
     </>
   )
 }
