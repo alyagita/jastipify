@@ -1,11 +1,11 @@
+import { Headphones, Tag, Truck } from 'lucide-react';
 import React from 'react';
-import { Tag, Truck, Headphones, Search } from 'lucide-react';
-import { Hero } from './landing/hero';
+import { mockData } from './data/mockData';
 import { CountryCard } from './landing/CountryCard';
 import { FeatureCard } from './landing/FeatureCard';
+import { Hero } from './landing/hero';
 import { ProductCard } from './landing/ProductCard';
 import TestimonialCard from './landing/TestimonialCard';
-import { mockData } from './data/mockData';
 
 function Home() {
   const iconComponents = {

@@ -1,5 +1,6 @@
+import { Box, Calendar, Globe, Search } from 'lucide-react';
 import React, { useState } from 'react';
-import { Search, Globe, Box, Calendar } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const SearchTabs = ({ activeTab, onTabChange }) => (
   <div className="flex">
@@ -32,6 +33,12 @@ const SearchArea = ({ activeTab }) => {
   const [country, setCountry] = useState('');
   const [product, setProduct] = useState('');
   const [date, setDate] = useState('');
+
+  const navigate = useNavigate();
+
+  const handleSearchClick = () => {
+    navigate('/search');
+  };
 
   return (
     <div className="bg-white rounded-lg rounded-tl-none shadow-lg">
@@ -79,7 +86,8 @@ const SearchArea = ({ activeTab }) => {
         </div>
 
         <button className="bg-orange-500 text-white p-3 rounded-lg
-        hover:bg-orange-600 transition-colors">
+        hover:bg-orange-600 transition-colors"
+        onClick={() => navigate('/search')}>
           <Search className="w-6 h-6" />
         </button>
       </div>
