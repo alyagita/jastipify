@@ -55,6 +55,7 @@ const SearchArea = ({ activeTab }) => {
               <option value="thailand">Thailand</option>
               <option value="japan">Japan</option>
               <option value="france">France</option>
+              <option value="south korea">South Korea</option>
             </select>
           </div>
         ) : (
