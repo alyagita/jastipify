@@ -146,10 +146,8 @@ const Chat = () => {
       </button>
     </div> 
   </div>
-  {/* Timestamp */}
-  <span className="text-sm text-gray-500 mt-1">02:40 pm</span>
 </div>
-
+<span className="text-sm text-gray-500 mt-0 block">02:40 pm</span>
 
         {/* User Final Response */}
         <div className="flex flex-col items-end mb-5">

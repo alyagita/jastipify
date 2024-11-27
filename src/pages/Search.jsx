@@ -113,7 +113,7 @@ const Search = () => {
   return (
     <>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mt-16">
         <h2 className="text-2xl font-medium mb-8">
           SEARCH RESULT FOR <span className="text-[#fb8500]">"South Korea"</span> and <span className="text-[#fb8500]">"02 Sept - 03 Oct 2024"</span>
         </h2>
