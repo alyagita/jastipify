@@ -2,71 +2,69 @@ import React from 'react';
 
 const Checkout = () => {
   return (
-    <div>
+    <div className="font-poppins">
       {/* Header */}
-      <header style={{ display: 'flex', alignItems: 'center', padding: '10px 20px'}}>
-        <div style={{ marginRight: '20px' }}>
-          <img src="/src/assets/logo.png" alt="Jastipify Logo" style={{ width: '120px', height: '120px' }} />
+      <header className="flex items-center p-2">
+        <div className="mr-5">
+          <img src="/src/assets/logo.png" alt="Jastipify Logo" className="w-[120px] h-auto ml-4" />
         </div>
-        <div style={{ display: 'flex',  marginLeft: '200px', justifyContent: 'center', flexGrow: 0.5, alignItems: 'center', border: '1px solid #f7931e', overflow: 'hidden' }}>
-          <div style={{ flex: 1, padding: '5px', textAlign: 'center', fontWeight: 'bold', fontSize: '16px', backgroundColor: '#f7931e', color: '#fff', borderRight: '1px solid #f7931e', fontFamily: 'Poppins, sans-serif' }}>
-            1. Information
-          </div>
-          <div style={{ flex: 1, padding: '5px', textAlign: 'center', fontWeight: 'bold', fontSize: '16px', color: '#f7931e', borderRight: '1px solid #f7931e', fontFamily: 'Poppins, sans-serif' }}>
-            2. Payment
-          </div>
-          <div style={{ flex: 1, padding: '5px', textAlign: 'center', fontWeight: 'bold', fontSize: '16px', color: '#f7931e', fontFamily: 'Poppins, sans-serif' }}>
-            3. Receipt
-          </div>
-        </div>
+        <div className="flex justify-center items-center w-full max-w-2xl ml-40 border border-[#FA8B02] overflow-hidden">
+  <div className="flex-1 py-2 text-center font-bold text-lg bg-[#FA8B02] text-white border-r border-[#FA8B02] p-[5px]">
+    1. Information
+  </div>
+  <div className="flex-1 py-2 text-center font-bold text-lg text-[#FA8B02] border-r border-[#FA8B02] p-[5px]">
+    2. Payment
+  </div>
+  <div className="flex-1 py-2 text-center font-bold text-lg text-[#FA8B02] ">
+    3. Receipt
+  </div>
+</div>
       </header>
 
       {/* Main Content */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', fontFamily: 'Poppins, sans-serif' }}>
+      <div className="flex justify-between p-5">
         {/* Checkout Form */}
-        <div style={{ width: '60%', padding: '20px' }}>
-        <div style={{ fontWeight: 'bold', fontSize: '20px'}}>
-        <p>Checkout</p>
-        </div>
+        <div className="w-3/5 p-5">
+          <div className="font-bold text-xl mb-2">Checkout</div>
           <form>
             {/* Name and Phone row */}
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Name</label>
-                <input type="text" placeholder="Enter your name" style={{ padding: '10px', border: '1px solid #000000' }} />
+            <div className="flex gap-4 mb-4">
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Name</label>
+                <input type="text" placeholder="Enter your name" className="p-2 border border-black" />
               </div>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Phone</label>
-                <input type="text" placeholder="Enter your phone number" style={{ padding: '10px', border: '1px solid #000000'}} />
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Phone</label>
+                <input type="text" placeholder="Enter your phone number" className="p-2 border border-black" />
               </div>
             </div>
 
             {/* Country, Province, City, and District row */}
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Country</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+            <div className="flex gap-4 mb-4">
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Country</label>
+                <select className="p-2 border border-black">
                   <option>Indonesia</option>
                   <option>Other</option>
                 </select>
               </div>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Province</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Province</label>
+                <select className="p-2 border border-black">
                   <option>East Java</option>
                   <option>West Java</option>
                 </select>
               </div>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>City</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">City</label>
+                <select className="p-2 border border-black">
                   <option>Surabaya</option>
                   <option>Jakarta</option>
                 </select>
               </div>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>District</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">District</label>
+                <select className="p-2 border border-black">
                   <option>Mulyorejo</option>
                   <option>Other</option>
                 </select>
@@ -74,55 +72,52 @@ const Checkout = () => {
             </div>
 
             {/* Address field */}
-            <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '15px' }}>
-              <label style={{ marginBottom: '5px' }}>Address</label>
-              <textarea placeholder="Enter your address" style={{ padding: '10px', border: '1px solid #000000', resize: 'vertical' }}></textarea>
+            <div className="flex flex-col mb-4">
+              <label className="mb-2 font-bold">Address</label>
+              <textarea placeholder="Enter your address" className="p-2 border border-black resize-y"></textarea>
             </div>
 
             {/* Shipping Method and Payment Method row */}
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Shipping Method</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+            <div className="flex gap-4 mb-4">
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Shipping Method</label>
+                <select className="p-2 border border-black">
                   <option>JNE</option>
                   <option>Other</option>
                 </select>
               </div>
-              <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <label style={{ marginBottom: '5px' }}>Payment Method</label>
-                <select style={{ padding: '10px', border: '1px solid #000000'}}>
+              <div className="flex-1 flex flex-col">
+                <label className="mb-2 font-bold">Payment Method</label>
+                <select className="p-2 border border-black">
                   <option>Transfer - BCA</option>
                   <option>Transfer - Mandiri</option>
                 </select>
               </div>
             </div>
 
-            <div style={{ fontWeight: 'bold', fontSize: '20px', marginTop: '50px' }}>
-              <p>Grand Total</p>
-              <div style={{ fontWeight: 'bold', fontSize: '20px', color: '#f7931e', marginTop: '0px', marginBottom: '10px' }}>
-                <p>Rp770.000,00</p>
-              </div>
+            <div className="font-bold text-xl mt-12 mb-0">Grand Total</div>
+            <div className="font-bold text-xl text-[#FA8B02] mb-8">Rp770.000,00</div>
+
+            <div className="flex justify-center mt-12">
+              <button
+                type="button"
+                className="bg-[#FA8B02] text-white py-2 px-4 rounded-full text-lg hover:bg-[#FA8B02] font-bold">
+                Continue to Payment
+              </button>
             </div>
           </form>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-            <button type="button" style={{ backgroundColor: '#f7931e', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '20px', cursor: 'pointer', fontSize: '16px' }}>
-              Continue to Payment
-            </button>
-          </div>
         </div>
 
         {/* Summary Section */}
-        <div style={{ width: '37%', padding: '20px', border: '5px solid #ddd', boxSizing: 'border-box', height: '530px'}}>
-        <div style={{ fontWeight: 'bold', fontSize: '20px'}}>
-        <p>Your Summary</p>
-        </div>
-          <h4>Items</h4>
-          <div style={{ display: 'flex', gap: '100px', alignItems: 'center', marginBottom: '15px' }}>
-            <img src="/src/assets/crocs.png" alt="Product" style={{ width: '150px', marginBottom: '10px' }} />
+        <div className="w-[37%] p-5 border-l border-black h-[530px] box-border">
+          <div className="font-bold text-xl mb-2">Your Summary</div>
+          <h4 className="mb-0">Items</h4>
+          <div className="flex gap-10 items-center mb-4">
+            <img src="/src/assets/crocs.png" alt="Product" className="w-40 mb-4" />
             <div>
-              <p style={{ margin: 0, fontWeight: 'bold' }}>Crocs Unisex - Adult Baya Clogs</p>
-              <p style={{ margin: '0px 0 20px 0', fontWeight: 'bold', color: '#f7931e' }}>Rp700.000,00</p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', margin: '55px 0 0 0', fontWeight: 'bold' }}>
+              <p className="font-bold mb-1 ml-12">Crocs Unisex - Adult Baya Clogs</p>
+              <p className="font-bold text-[#FA8B02] mb-4 ml-12">Rp700.000,00</p>
+              <div className="flex justify-between font-bold mt-8 ml-12">
                 <span>QTY</span>
                 <span>1</span>
               </div>
@@ -131,45 +126,45 @@ const Checkout = () => {
 
           <div>
             {/* Delivery section */}
-            <p style={{marginBottom: '10px'}}>Delivery</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px'}}>Weight</p>
-              <p style={{ margin: 0, fontSize: '13px' }}>1 KG</p>
+            <p className="mb-2">Delivery</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm">Weight</p>
+              <p className="text-sm">1 KG</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px'}}>Courier</p>
-              <p style={{ margin: 0, fontSize: '13px' }}>JNE</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm">Courrier</p>
+              <p className="text-sm">JNE</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px' }}>Delivery Fee</p>
-              <p style={{ margin: 0, color: '#f7931e', fontSize: '13px'}}>Free</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm mb-4">Delivery Fee</p>
+              <p className="text-sm text-[#FA8B02] mb-4">Free</p>
             </div>
           </div>
 
           {/* Total section */}
           <div>
-            <p style={{marginBottom: '10px'}}>Total</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px' }}>Item(s)</p>
-              <p style={{ margin: 0, fontSize: '13px' }}>Rp700.000,00</p>
+            <p className="mb-2">Total</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm">Item(s)</p>
+              <p className="text-sm">Rp700.000,00</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px' }}>Tax</p>
-              <p style={{ margin: 0, fontSize: '13px' }}>Rp70.000,00</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm">Tax</p>
+              <p className="text-sm">Rp70.000,00</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '13px' }}>Delivery Fee</p>
-              <p style={{ margin: 0, color: '#f7931e', fontSize: '13px' }}>Free</p>
+            <div className="flex justify-between mb-1">
+              <p className="font-bold text-sm mb-4">Delivery Fee</p>
+              <p className="text-sm text-[#FA8B02] mb-4">Free</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '25px' }}>
-              <p style={{ margin: 0, fontWeight: 'bold', fontSize: '20px' }}>Grand Total</p>
-              <p style={{ margin: 0, fontWeight: 'bold', color: '#f7931e', fontSize: '20px' }}>Rp770.000,00</p>
+            <div className="flex justify-between mt-4">
+              <p className="font-bold text-lg">Grand Total</p>
+              <p className="font-bold text-[#FA8B02] text-lg">Rp770.000,00</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Checkout;
