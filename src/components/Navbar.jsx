@@ -39,13 +39,13 @@ const Navbar = () => {
       </ul>
 
       {/* Search Bar */}
-      <div className="flex items-center border border-[#FA8B02] rounded-md overflow-hidden">
+      <div className="flex items-center border h-8 border-[#FA8B02] rounded-md overflow-hidden">
         <input
           type="text"
           placeholder="Search for products..."
           className="pl-2 w-[30rem] py-1 text-xs text-[#FA8B02] placeholder-[#FA8B02] focus:outline-none"
         />
-        <button className="px-4 bg-[#FA8B02] text-white">
+        <button className="px-4 bg-[#FA8B02] text-white h-8">
           {/* Search Icon */}
           <img src={search} alt="Search" className="w-6 h-6" />
         </button>
