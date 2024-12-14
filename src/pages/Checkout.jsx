@@ -5,10 +5,24 @@ const Checkout = () => {
     <div className="font-poppins">
       {/* Header */}
       <header className="flex items-center p-2">
+      <button 
+      className="flex items-center justify-center mr-2 p-2 rounded-full hover:bg-gray-200 transition"
+      onClick={() => window.history.back()}
+    >
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        className="w-[40px] h-auto text-[#FA8B02]"
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
         <div className="mr-5">
-          <img src="/src/assets/logo.png" alt="Jastipify Logo" className="w-[120px] h-auto ml-4" />
+          <img src="/src/assets/logo.png" alt="Jastipify Logo" className="w-[100px] h-auto" />
         </div>
-        <div className="flex justify-center items-center w-full max-w-2xl ml-40 border border-[#FA8B02] overflow-hidden">
+        <div className="flex justify-center items-center w-full max-w-2xl ml-36 border border-[#FA8B02] overflow-hidden">
   <div className="flex-1 py-2 text-center font-bold text-lg bg-[#FA8B02] text-white border-r border-[#FA8B02] p-[5px]">
     1. Information
   </div>
@@ -109,7 +123,7 @@ const Checkout = () => {
         </div>
 
         {/* Summary Section */}
-        <div className="w-[37%] p-5 border-l border-black h-[530px] box-border">
+        <div className="w-[37%] p-5 border-l border-black h-[580px] box-border">
           <div className="font-bold text-xl mb-2">Your Summary</div>
           <h4 className="mb-0">Items</h4>
           <div className="flex gap-10 items-center mb-4">
