@@ -65,6 +65,7 @@ const StoreHeader = ({ onOpenChat }) => {
 };
 
 const ChatPopup = ({ onClose }) => {
+  const navigate = useNavigate();
   const [position, setPosition] = useState({ x: 0, y: 0 }); // Default posisi awal
   const [isDragging, setIsDragging] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });

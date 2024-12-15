@@ -77,7 +77,7 @@ const SearchArea = ({ activeTab }) => {
           <Calendar className="w-5 h-5 text-gray-400 mr-2" />
           <input
             type="text"
-            placeholder="Choose Date..."
+            placeholder="Choose Pre-Order Date..."
             value={date}
             onChange={(e) => setDate(e.target.value)}
             className="w-full bg-transparent outline-none text-gray-600"
