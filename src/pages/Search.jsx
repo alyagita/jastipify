@@ -7,7 +7,7 @@ const Search = () => {
     {
       image: '/src/assets/WishList.png',
       title: 'WishList',
-      date: '15 Sept - 03 Oct 2024',
+      date: '01 Sept - 03 Oct 2024',
       sold: '25',
       country: 'South Korea',
       rating: '4.9'
@@ -15,7 +15,7 @@ const Search = () => {
     {
       image: '/src/assets/BoutiqueID.png',
       title: 'BoutiqueID',
-      date: '1 Oct - 15 Oct 2024',
+      date: '01 Sept - 15 Oct 2024',
       sold: '15',
       country: 'South Korea',
       rating: '4.9'
@@ -31,7 +31,7 @@ const Search = () => {
     {
       image: '/src/assets/LuxuryList.png',
       title: 'LuxuryList',
-      date: '20 Sept - 10 Oct 2024',
+      date: '01 Sept - 10 Oct 2024',
       sold: '2985',
       country: 'South Korea',
       rating: '5.0'
@@ -39,7 +39,7 @@ const Search = () => {
     {
       image: '/src/assets/TreasureHunt.png',
       title: 'TreasureHunt',
-      date: '25 Sept - 01 Oct 2024',
+      date: '01 Sept - 01 Oct 2024',
       sold: '1467',
       country: 'South Korea',
       rating: '4.6'
@@ -47,7 +47,7 @@ const Search = () => {
     {
       image: '/src/assets/FindsOfficial.png',
       title: 'FindsOfficial',
-      date: '19 Sept - 30 Sept 2024',
+      date: '01 Sept - 30 Sept 2024',
       sold: '95',
       country: 'South Korea',
       rating: '4.9'
